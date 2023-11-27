@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    --blue-color: #2B8FEC;
+    --green-color: #3FDF9C;
+    --white-color: #FFFFFF;
+
+    --padding-value: 40px;
+
+    padding: 0;
+    margin: auto 0;
+
+    font-family: 'Inter', sans-serif;
+}
+
+main {
+    background: linear-gradient(var(--blue-color), var(--green-color));
+    color: var(--white-color);
+
+    height: 100vh; 
+
+    animation: backgroundAnimated 0s ease infinite;
+}
+
+main h1 {
+    margin: 0;
+    
+    
+    padding: var(--padding-value);
+    padding-top: 25vh;
+
+    font-size: 70px;
+    font-weight: 700;
+}
+
+main h2 {
+    margin: 0;
+    
+    padding-left: var(--padding-value);
+
+    font-size: 40px;
+    font-weight: 700;
+}
+
+#socials {
+    margin: 0;
+    
+    padding-left: var(--padding-value);
+    padding-top: var(--padding-value);
+}
+
+#socials img {
+    height: 50px;
+    margin-right: 25px;
+}
+
+#scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: var(--padding-value);
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#scroll img {
+    width: 25px;
+}
+
+
+
+
+
+
+#about-me {
+    padding: var(--padding-value);
+}
+
+#about-me h2 {
+    color: var(--green-color);
+    background-clip: text;
+}
+
+.tools {
+    display: flex;
+    width: 100%;
+    overflow-y: hidden;
+}
+
+.element {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    margin-right: 30px;
+}
+
+.element img {
+    height: 50px;
+
+    margin-bottom: 20px;
+}
+
+.element p, .element b {
+    width: 135px;
+    text-align: center;
+}
