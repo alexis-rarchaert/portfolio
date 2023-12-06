@@ -4,11 +4,14 @@ body {
     --blue-color: #2B8FEC;
     --green-color: #3FDF9C;
     --white-color: #FFFFFF;
+    --back-color: #1E1E1E;
 
     --padding-value: 40px;
 
     padding: 0;
     margin: auto 0;
+
+    color: var(--blue-color);
 
     font-family: 'Inter', sans-serif;
 }
@@ -83,9 +86,35 @@ main h2 {
 #about-me h2 {
     color: var(--green-color);
     background-clip: text;
+    font-size: 30px;
+}
+
+#competences {
+    list-style-type: none;
+    display: flex;
+    padding-inline-start: 0;
+}
+
+#competences li {
+    padding: 14px;
+    margin-right: 14px;
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    border-radius: 50px;
+    font-weight: 700;
+}
+
+#about-me p, #about-me ul li {
+    font-size: 20px;
 }
 
 .tools {
+    display: flex;
+    width: 100%;
+    overflow-y: hidden;
+}
+
+#projects {
     display: flex;
     width: 100%;
     overflow-y: hidden;
@@ -99,13 +128,42 @@ main h2 {
     margin-right: 30px;
 }
 
+.pelement {
+    display: flex;
+    flex-direction: column;
+
+    width: 300px;
+
+    align-items: center;
+    margin-right: 30px;
+}
+
 .element img {
     height: 50px;
 
     margin-bottom: 20px;
 }
 
-.element p, .element b {
-    width: 135px;
+.pelement b {
+    margin-top: 20px;
+}
+
+.element p, .element b, .pelement p, .pelement b {
     text-align: center;
+}
+
+.used-tools {
+    list-style-type: none;
+    display: flex;
+    padding-inline-start: 0;
+}
+
+.used-tools li {
+    padding: 14px;
+    margin-right: 14px;
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    border-radius: 20px;
+    font-weight: 300;
+    font-size: 7px;
 }
