@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     --blue-color: #2B8FEC;
     --green-color: #3FDF9C;
@@ -21,8 +25,6 @@ main {
     color: var(--white-color);
 
     height: 100vh; 
-
-    animation: backgroundAnimated 0s ease infinite;
 }
 
 main h1 {
@@ -77,8 +79,6 @@ main h2 {
 
 
 
-
-
 #about-me {
     padding: var(--padding-value);
 }
@@ -92,20 +92,26 @@ main h2 {
 #competences {
     list-style-type: none;
     display: flex;
+    overflow-y: hidden;
+
     padding-inline-start: 0;
 }
 
 #competences li {
     padding: 14px;
     margin-right: 14px;
-    background-color: var(--blue-color);
-    color: var(--white-color);
+    color: var(--blue-color);
     border-radius: 50px;
     font-weight: 700;
+    width: 20vw;
 }
 
 #about-me p, #about-me ul li {
     font-size: 20px;
+}
+
+#experiences img {
+    width: 100%;
 }
 
 .tools {
@@ -126,6 +132,8 @@ main h2 {
 
     align-items: center;
     margin-right: 30px;
+
+    min-width: 10%;
 }
 
 .pelement {
@@ -148,6 +156,10 @@ main h2 {
     margin-top: 20px;
 }
 
+.pelement p {
+    height: fit-content;
+}
+
 .element p, .element b, .pelement p, .pelement b {
     text-align: center;
 }
@@ -156,10 +168,13 @@ main h2 {
     list-style-type: none;
     display: flex;
     padding-inline-start: 0;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .used-tools li {
     padding: 14px;
+    margin-top: 14px;
     margin-right: 14px;
     background-color: var(--blue-color);
     color: var(--white-color);
