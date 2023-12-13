@@ -149,6 +149,9 @@ main h2 {
 }
 
 .pelement {
+    color: var(--blue-color);
+    text-decoration: none;
+
     display: flex;
     flex-direction: column;
 
@@ -207,6 +210,7 @@ main h2 {
     padding: 10px;
     border-radius: 20px;
     text-decoration: none;
+    width: auto;
 }
 
 #scrollButton {
