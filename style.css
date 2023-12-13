@@ -200,6 +200,15 @@ main h2 {
     margin-right: 0;
 }
 
+.view-project {
+    font-size: 10px;
+    color: var(--white-color);
+    background-color: var(--green-color);
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
 #scrollButton {
     display: none;
     position: fixed;
