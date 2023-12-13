@@ -54,9 +54,14 @@ main h2 {
     padding-top: var(--padding-value);
 }
 
-#socials img {
+#socials a {
     height: 50px;
     margin-right: 25px;
+    color: white;
+}
+
+#socials a i {
+    font-size: 20px;
 }
 
 #scroll {
@@ -105,7 +110,7 @@ main h2 {
     font-weight: 700;
 }
 
-#about-me p, #about-me ul li {
+#competences li {
     font-size: 20px;
 }
 
@@ -116,13 +121,17 @@ main h2 {
 .tools {
     display: flex;
     width: 100%;
-    overflow-y: hidden;
+    /*overflow-y: hidden;*/
+    justify-content: center;
 }
 
 #projects {
     display: flex;
     width: 100%;
     overflow-y: hidden;
+    justify-content: center;
+
+    gap: 10px 10px;
 }
 
 .element {
@@ -130,18 +139,20 @@ main h2 {
     flex-direction: column;
 
     align-items: center;
-    margin-right: 30px;
+    width: 30vw;
 }
 
 .element * {
     width: fit-content;
+    flex-basis: 25%;
+    
 }
 
 .pelement {
     display: flex;
     flex-direction: column;
 
-    width: 300px;
+    width: 25vw;
 
     align-items: center;
     margin-right: 30px;
@@ -163,25 +174,30 @@ main h2 {
 
 .element p, .element b, .pelement p, .pelement b {
     text-align: center;
+    width: 100%;
 }
 
 .used-tools {
     list-style-type: none;
     display: flex;
     padding-inline-start: 0;
-    flex-wrap: wrap;
     justify-content: center;
+
+    gap: 10px 10px;
 }
 
 .used-tools li {
-    padding: 14px;
-    margin-top: 14px;
-    margin-right: 14px;
+    display: flex;
+    padding: 7px;
     background-color: var(--blue-color);
     color: var(--white-color);
     border-radius: 20px;
     font-weight: 300;
-    font-size: 7px;
+    font-size: 10px;
+}
+
+.used-tools li:nth-last-child(1) {
+    margin-right: 0;
 }
 
 #scrollButton {

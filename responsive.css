@@ -1,22 +1,37 @@
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 940px) { /* Mobile */
+    main h1 {
+        padding-top: var(--padding-value);
+    }
+
     .tools {
         display: flex;
         width: 100%;
-        overflow-y: hidden;
     }
 
-    .element {
-        min-width: 10%;
+    #competences, .tools, .projects {
+        flex-wrap: wrap;
+    }
+
+    #projects {
+        flex-wrap: wrap;
+    }
+
+    .pelement img {
+        width: fit-content;
+    }
+
+    .used-tools {
+        flex-wrap: wrap;
+    }
+
+    .element p, .pelement p {
+        font-size: 10px;
     }
 }
 
-@media screen and (min-width: 940px) {
+@media screen and (min-width: 940px) { /* PC */
     .tools {
-        flex-wrap: wrap; 
+        flex-wrap: nowrap; 
         justify-content: center;
-    }
-
-    .element {
-        flex-basis: 25%;
     }
 }
