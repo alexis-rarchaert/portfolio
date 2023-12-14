@@ -24,7 +24,7 @@ main {
     background: linear-gradient(var(--blue-color), var(--green-color));
     color: var(--white-color);
 
-    height: 100vh; 
+    min-height: 100vh; 
 }
 
 main h1 {
@@ -45,6 +45,8 @@ main h2 {
 
     font-size: 40px;
     font-weight: 700;
+
+    width: 75%;
 }
 
 #socials {
